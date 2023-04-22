@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  my_bot:
+    build: .
+    restart: always
+    environment:
+      - API_ID=<your_api_id>
+      - API_HASH=<your_api_hash>
+      - BOT_TOKEN=<your_bot_token>
+    volumes:
+      - ./data:/app/data
